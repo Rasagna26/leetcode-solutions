@@ -1,0 +1,12 @@
+class Solution:
+    def averageValue(self, nums: list[int]) -> int:
+        x=0
+        c=0
+        for num in nums:
+            if num%6==0:
+                x+=num
+                c+=1
+        if c==0:
+            return 0
+        else:
+            return x//c
