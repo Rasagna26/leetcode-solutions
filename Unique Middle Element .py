@@ -1,0 +1,4 @@
+class Solution:
+    def isMiddleElementUnique(self, nums: list[int]) -> bool:
+        mid = len(nums) // 2
+        return nums.count(nums[mid]) == 1
